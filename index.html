@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pixel Art Maker!</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Pixel Art Maker</h1>
+
+    <h2>Choose Grid Size</h2>
+    <form id="sizePicker">
+        Grid Height:
+        <!-- COMMENTING OUT TO PLAY AROUND WITH ERROR HANDLING IN JQUERY / CSS -->
+        <!-- <input type="number" id="input_height" name="height" min="1" max= "100" value="10"> -->
+        <input type="number" id="input_height" name="height" min="1" value="10">
+        <div id="error_height" class="error_message"></div>
+        Grid Width:
+        <!-- <input type="number" id="input_width" name="width" min="1" max= "100" value="10"> -->
+        <input type="number" id="input_width" name="width" min="1" value="10">
+        <div id="error_width" class="error_message"></div>
+        <input type="submit" id="input_submit">
+    </form>
+
+
+    <h2>Pick A Color</h2>
+    <input type="color" id="colorPicker">
+
+    <h2>Design Canvas</h2>
+    <table id="pixel_canvas"></table>
+
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="designs.js"></script>
+</body>
+</html>
